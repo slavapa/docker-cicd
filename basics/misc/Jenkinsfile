@@ -23,7 +23,7 @@ node {
      }
    }
    stage('docker run') {
-     sh label: '', script: '''docker rm docker_test || true
+     sh label: '', script: """docker rm docker_test || true
      sh 'pwd'
       dir("basics"){
          sh 'pwd'
