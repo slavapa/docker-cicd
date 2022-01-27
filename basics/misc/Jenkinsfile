@@ -20,7 +20,9 @@ node {
    }
    stage('docker run') {
      sh label: '', script: '''docker rm docker_test
+     sh 'pwd'
       dir("basics"){
+         sh 'pwd'
          docker run --rm -tid --name docker_test -p 3000 slavapas13/nodejs-demo:latest
          docker kill docker_test
        }      
