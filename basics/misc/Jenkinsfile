@@ -32,4 +32,4 @@ node {
          docker kill docker_test     
       """     
    }
-
+}
