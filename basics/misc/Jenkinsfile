@@ -30,7 +30,7 @@ node {
          docker run --rm -tid --name docker_test -p 3000 slavapas13/nodejs-demo:${commit_id}
          docker kill docker_test
        }      
-      '''
+      """
      }
    }
 
