@@ -29,7 +29,7 @@ node {
      sh 'pwd'
          sh 'pwd'
          docker run --rm -tid --name docker_test -p 3000 slavapas13/nodejs-demo:${commit_id}
-         docker kill docker_test     
+         docker service ls | grep <service-name> && docker kill docker_test     
       """     
    }
 }
